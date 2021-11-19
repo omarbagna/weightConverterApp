@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            margin-top: 70px;
+            background-color: #333;
+            color: antiquewhite;
+        }
+    </style>
+    <title>Weight Converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="display-4 text-center mb-5">Weight Converter</h1>
+                <form>
+                    <div class="form-inline form-group offset-2">
+                        <input id="unit" type="number" class="form-control form-cotrol-lg" placeholder="Enter Weight">
+                        <select name="weightType" id="weighType" class="form-control" onchange="weightSelect()">
+                            <option value="default">Choose Type</option>
+                            <option value="kg">Kilograms</option>
+                            <option value="g">Grams</option>
+                            <option value="lbs">Pounds</option>
+                            <option value="oz">Ounces</option>
+                        </select>
+                    </div>
+                </form>
+                <div id="output">
+
+                    <div class="card text-white bg-success mb-3">
+                        <div class="card-body">
+                            <h4 id="txtKilos">Kilograms:</h4>
+                            <div id="kilosOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-info mb-3">
+                        <div class="card-body">
+                            <h4 id="txtGrams">Grams:</h4>
+                            <div id="gramsOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-body">
+                            <h4 id="txtPounds">Pounds:</h4>
+                            <div id="poundsOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-danger mb-3">
+                        <div class="card-body">
+                            <h4 id="txtOunces">Ounces:</h4>
+                            <div id="ozOutput"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
