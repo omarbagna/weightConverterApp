@@ -5,4 +5,4 @@ A simple weight converter application built in JavaScript
 ## [Live Preview](https://weight-converter-js-app.netlify.app/)
 
 
-![PREVIEW](/preview/AISiteDesktopHead.png)
+![PREVIEW](/weight-converter.png)
